@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ZapaticosCorp">
+    <title>Eventos Institucionales</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logoContainer">
+            <img id="logo" src="resources/img/logo-umagdalena.svg" alt="Logo Institucional">
+        </div>
+        <div id="institutionNameContainer">
+            <h2 id="institutionName">UNIVERSIDAD DEL MAGDALENA</h2>
+        </div>
+        <div id="loginBtnContainer">
+            <button id="loginHeaderBtn">Ingresar</button>
+        </div>
+    </header>
+    <main>
+        <div id="titleContainer">
+            <h2 id="mainTitle">PRÓXIMOS EVENTOS</h2>
+        </div>
+        <div id="searchContainer">
+            <input type="text" id="searchInput" placeholder="Buscar...">
+        </div>
+        <section id="eventsContainer">
+            <div class="eventCard">
+                <img src="resources/img/party.jpg" alt="Evento">
+                <div class="info">
+                    <h3>Nombre del Evento</h3>
+                    <p>Lugar: Auditorio Central</p>
+                    <p>Hora: 6:00 PM</p>
+                </div>
+            </div>
+
+            <div class="eventCard">
+                <img src="resources/img/party.jpg" alt="Evento">
+                <div class="info">
+                    <h3>Nombre del Evento</h3>
+                    <p>Lugar: Auditorio Central</p>
+                    <p>Hora: 6:00 PM</p>
+                </div>
+            </div>
+
+            <div class="eventCard">
+                <img src="resources/img/party.jpg" alt="Evento">
+                <div class="info">
+                    <h3>Nombre del Evento</h3>
+                    <p>Lugar: Auditorio Central</p>
+                    <p>Hora: 6:00 PM</p>
+                </div>
+            </div>
+
+            <div class="eventCard">
+                <img src="resources/img/party.jpg" alt="Evento">
+                <div class="info">
+                    <h3>Nombre del Evento</h3>
+                    <p>Lugar: Auditorio Central</p>
+                    <p>Hora: 6:00 PM</p>
+                </div>
+            </div>
+
+            <div class="eventCard">
+                <img src="resources/img/party.jpg" alt="Evento">
+                <div class="info">
+                    <h3>Nombre del Evento</h3>
+                    <p>Lugar: Auditorio Central</p>
+                    <p>Hora: 6:00 PM</p>
+                </div>
+            </div>
+
+            <div class="eventCard">
+                <img src="resources/img/party.jpg" alt="Evento">
+                <div class="info">
+                    <h3>Nombre del Evento</h3>
+                    <p>Lugar: Auditorio Central</p>
+                    <p>Hora: 6:00 PM</p>
+                </div>
+            </div>
+
+        </section>
+        <div id="modal" class="modal" style="display: none;">
+            <div id="loginForm" class="modalContent">
+                <span class="closeLogin">&times;</span>
+                <h2>Iniciar Sesión</h2>
+                <input type="text" id="userInput" placeholder="Usuario (Código estudiantil)">
+                <input type="password" id="passwordInput" placeholder="Contraseña">
+                <button id="btnLoginSubmit">Entrar</button>
+                <p id="modalText">No tienes usuario? <a id="registerBtn">Regístrate</a></p>
+            </div>
+            <div id="registerForm" class="modalContent">
+                <span class="closeRegister">&times;</span>
+                <h2>Regístrate</h2>
+                <input type="text" id="registerCode" placeholder="Usuario (Código estudiantil)">
+                <input type="text" id="registerName" placeholder="Nombre">
+                <input type="text" id="registerLastName" placeholder="Apellido">
+                <input type="text" id="registerEmail" placeholder="Correo electrónico">
+                <input type="password" id="registerPassword" placeholder="Contraseña">
+                <input type="password" id="registerConfirmPassword" placeholder="Confirmar contraseña">
+                <button id="btnRegisterSubmit">Registrarse</button>
+                <p id="modalText">Ya tienes usuario? <a id="loginBtn">Iniciar Sesión</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footerContainer">
+            <p class="footer">Universidad del Magdalena - Todos los derechos reservados</p>
+            <p class="footer">ZapaticosCorp</p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
